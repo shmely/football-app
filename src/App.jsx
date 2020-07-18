@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Switch, Route, Redirect } from 'react-router';
+import { Router, Switch, Route } from 'react-router';
 import { history } from './history';
 import { NavBar } from './cmps/NavBar';
 import { UserMessage } from './cmps/UserMessage';
@@ -14,12 +14,8 @@ export function App() {
       <NavBar></NavBar>
       <Router history={history}>
         <Switch>
-          <Route exact path="/football-app">
-            <Redirect to="/football-app/team" />
-          </Route>
+          <Route exact path="/football-app/team" component={Teams} />
           <Route path="/football-app/team/:id" component={TeamDetails} />
-          <Route path="/football-app/team" component={Teams} />
-
         </Switch>
       </Router>
       <UserMessage></UserMessage>
