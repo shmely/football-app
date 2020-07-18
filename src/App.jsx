@@ -14,7 +14,7 @@ export function App() {
       <NavBar></NavBar>
       <Router history={history}>
         <Switch>
-          <Route exact path="/football-app/team" component={Teams} />
+          <Route exact path="/football-app/" component={Teams} />
           <Route path="/football-app/team/:id" component={TeamDetails} />
         </Switch>
       </Router>
