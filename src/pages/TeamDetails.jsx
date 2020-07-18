@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from "react-router";
 import { setTeam } from '../store/actions/footballActions';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Loader from 'react-loader-spinner';
 
 export function TeamDetails() {
     let { id } = useParams();
@@ -15,12 +17,16 @@ export function TeamDetails() {
     }, [dispatch, id])
 
 
-    if (!team) return (<div>loading</div>)
+    if (!team) return (<div className="flex column align-center">
+        <Loader secondaryColor="#2196f3d9" type="Circles" color="#2196F3"
+            className="loader" height={60} width={60} />
+        <p>Loading...</p>
+    </div>)
     return (
         <section className="team-details">
             <div className=" flex column">
                 <header className="flex align-center justify-center">
-                    <img src={team.WikipediaLogoUrl} alt={team.Name} title={team.Name} />
+                    <LazyLoadImage src={team.WikipediaLogoUrl} alt={team.Name} title={team.Name} />
                     <h1>{team.Name}</h1>
                 </header>
                 <div className="flex space-evenly wrap">
