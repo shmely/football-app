@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Switch, Route } from 'react-router';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { history } from './history';
 import { NavBar } from './cmps/NavBar';
 import { UserMessage } from './cmps/UserMessage';
@@ -12,12 +12,12 @@ export function App() {
   return (
     <div className="football-cont">
       <NavBar></NavBar>
-      <Router history={history}>
+      <BrowserRouter basename="/football-app" history={history}>
         <Switch>
-          <Route exact path="/football-app/" component={Teams} />
-          <Route path="/football-app/team/:id" component={TeamDetails} />
+          <Route exact path="/" component={Teams} />
+          <Route path="/team/:id" component={TeamDetails} />
         </Switch>
-      </Router>
+      </BrowserRouter>
       <UserMessage></UserMessage>
     </div>
   );
