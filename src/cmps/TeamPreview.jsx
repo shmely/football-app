@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link } from 'react-router-dom'
 
 
 
@@ -15,9 +16,10 @@ export function TeamPreview(props) {
             <h2>{`Founded: ${team.Founded}`}</h2>
             <p>{`Address: ${team.Address}, ${team.City}, ${team.AreaName}`}</p>
             <div className="actions">
-                <Button variant="contained" color="primary" href={`/football-app/team/${team.TeamId}`}>
+                <Link style={{ "color": "black" }} to={`/team/${team.TeamId}`}>aaaa</Link>
+                {/* <Button variant="contained" color="primary" href={`/team/${team.TeamId}`}>
                     Team Details
-            </Button>
+            </Button> */}
             </div>
 
         </section>
