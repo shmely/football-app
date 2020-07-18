@@ -1,0 +1,24 @@
+.nav-header {
+    padding: 15px 80px;
+    background-color: #1a237e;
+    a {
+        color: #fff;
+        font-size: rem(50px);
+    }
+    nav {
+        height: 10vh;
+        button {
+            margin-right: 10px;
+        }
+        .close {
+            display: none;
+            cursor: pointer;
+            color: #303f9f;
+            margin-top: 10px;
+        }
+    }
+    .btn-menu {
+        display: none;
+        color: white;
+    }
+}
