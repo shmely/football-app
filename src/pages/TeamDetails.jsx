@@ -29,16 +29,16 @@ export function TeamDetails() {
                     <LazyLoadImage src={team.WikipediaLogoUrl} alt={team.Name} title={team.Name} />
                     <h1>{team.Name}</h1>
                 </header>
-                <div className="flex space-evenly wrap">
+                <div className="content flex space-evenly wrap">
                     <div>
                         <h2>{`Founded: ${team.Founded}`}</h2>
-                        <div className="content flex wrap">
+                        <div className="flex wrap">
                             <p>Website:</p>
                             <a href={team.Website}>{team.Website}</a>
                         </div>
 
 
-                        <div className="content flex wrap">
+                        <div className="flex wrap">
                             <p>{`Address: ${team.Address}, ${team.City}, ${team.AreaName}`}</p>
                         </div>
 

@@ -1,11 +1,24 @@
 .teams-cont {
     background-color: #e8eaf6;
+    .teams-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 320px);
+        gap: 15px;
+        justify-content: space-between;
+        padding: 80px;
+    }
 }
 
-.teams-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
-    gap: 15px;
-    justify-content: space-between;
-    padding: 80px;
+@media (max-width: 500px) {
+    .teams-cont {
+        background-color: #e8eaf6;
+        align-items: center;
+        .teams-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 320px);
+            gap: 15px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    }
 }

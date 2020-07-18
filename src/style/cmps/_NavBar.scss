@@ -23,3 +23,9 @@
         color: white;
     }
 }
+
+@media (max-width: 500px) {
+    .nav-header {
+        padding: 15px 20px;
+    }
+}

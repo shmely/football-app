@@ -18,7 +18,7 @@ export const Teams = () => {
 
 
     return (
-        <main className="teams-cont flex column">
+        <main className="teams-cont flex column justify-center">
             <AutoComplete></AutoComplete>
             <div className="teams-list">
                 {teams && teams.map((team, idx) => <TeamPreview team={team} key={idx}></TeamPreview>)}
