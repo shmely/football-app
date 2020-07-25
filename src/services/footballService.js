@@ -12,7 +12,7 @@ const LOCATIONS = 'LOCATIONS';
 async function getTeams(term = '') {
     let teams = storageService.loadFromStorage(TEAMS);
     if (!teams) {
-        const teams = await httpService.get(`Teams?key=${API_KEY}`);
+        teams = await httpService.get(`Teams?key=${API_KEY}`);
         storageService.saveToStorage(TEAMS, teams);
     }
     if (term) return teams.filter(team => team.AreaId === term);

@@ -24,6 +24,10 @@
         margin-bottom: 5px;
         flex-grow: 1;
     }
+    &:hover {
+        transform: scale(1.05);
+        border: 1px solid #35badb;
+    }
     .actions {
         height: 40px;
         padding: 0;
