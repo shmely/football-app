@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/football-app/static/css/main.a6a8cc9d.chunk.css",
-    "main.js": "/football-app/static/js/main.d6b83347.chunk.js",
-    "main.js.map": "/football-app/static/js/main.d6b83347.chunk.js.map",
+    "main.css": "/football-app/static/css/main.5fa1b226.chunk.css",
+    "main.js": "/football-app/static/js/main.859e7d88.chunk.js",
+    "main.js.map": "/football-app/static/js/main.859e7d88.chunk.js.map",
     "runtime-main.js": "/football-app/static/js/runtime-main.e557b739.js",
     "runtime-main.js.map": "/football-app/static/js/runtime-main.e557b739.js.map",
-    "static/js/2.a4e0b1d8.chunk.js": "/football-app/static/js/2.a4e0b1d8.chunk.js",
-    "static/js/2.a4e0b1d8.chunk.js.map": "/football-app/static/js/2.a4e0b1d8.chunk.js.map",
+    "static/js/2.f3fc1c07.chunk.js": "/football-app/static/js/2.f3fc1c07.chunk.js",
+    "static/js/2.f3fc1c07.chunk.js.map": "/football-app/static/js/2.f3fc1c07.chunk.js.map",
     "index.html": "/football-app/index.html",
-    "precache-manifest.3647840265aa6b49df0a271b3f968318.js": "/football-app/precache-manifest.3647840265aa6b49df0a271b3f968318.js",
+    "precache-manifest.ffd6b15a6b01f15a44afea7c4ac6a4ed.js": "/football-app/precache-manifest.ffd6b15a6b01f15a44afea7c4ac6a4ed.js",
     "service-worker.js": "/football-app/service-worker.js",
-    "static/css/main.a6a8cc9d.chunk.css.map": "/football-app/static/css/main.a6a8cc9d.chunk.css.map",
-    "static/js/2.a4e0b1d8.chunk.js.LICENSE.txt": "/football-app/static/js/2.a4e0b1d8.chunk.js.LICENSE.txt",
+    "static/css/main.5fa1b226.chunk.css.map": "/football-app/static/css/main.5fa1b226.chunk.css.map",
+    "static/js/2.f3fc1c07.chunk.js.LICENSE.txt": "/football-app/static/js/2.f3fc1c07.chunk.js.LICENSE.txt",
     "static/media/global.scss": "/football-app/static/media/ubuntu.2505bfbd.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.e557b739.js",
-    "static/js/2.a4e0b1d8.chunk.js",
-    "static/css/main.a6a8cc9d.chunk.css",
-    "static/js/main.d6b83347.chunk.js"
+    "static/js/2.f3fc1c07.chunk.js",
+    "static/css/main.5fa1b226.chunk.css",
+    "static/js/main.859e7d88.chunk.js"
   ]
 }
